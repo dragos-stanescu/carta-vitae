@@ -45,7 +45,7 @@ export function Sidebar({ contact, skills, education }: SidebarProps) {
 
       <SidebarPanel title="Skills">
         {skills.map((skill) => (
-          <SkillItem key={skill.name} name={skill.name} years={skill.years} />
+          <SkillItem key={skill.category} category={skill.category} skills={skill.skills} />
         ))}
       </SidebarPanel>
 

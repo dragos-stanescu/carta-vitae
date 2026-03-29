@@ -8,9 +8,9 @@ export interface ContactInfo {
   };
 }
 
-export interface Skill {
-  name: string;
-  years: number;
+export interface SkillCategory {
+  category: string;
+  skills: string[];
 }
 
 export interface Education {
@@ -41,7 +41,7 @@ export interface CvData {
   titles: string[];
   aboutMe: string;
   contact: ContactInfo;
-  skills: Skill[];
+  skills: SkillCategory[];
   education: Education;
   projects: Project[];
 }

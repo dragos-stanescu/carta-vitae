@@ -1,5 +1,6 @@
 import type { CvData } from "../../data/types";
 
+
 interface PreviewSidebarProps {
   contact: CvData["contact"];
   skills: CvData["skills"];
@@ -27,9 +28,9 @@ export function PreviewSidebar({
 
       <SidebarSection title="Skills">
         {skills.map((skill) => (
-          <div key={skill.name} className="flex justify-between text-sm mb-1">
-            <span>{skill.name}</span>
-            <span>{skill.years} {skill.years > 1 ? "years" : "year"}</span>
+          <div key={skill.category} className="mb-2">
+            <p className="text-xs font-bold">{skill.category}</p>
+            <p className="text-xs text-white/70">{skill.skills.join(", ")}</p>
           </div>
         ))}
       </SidebarSection>

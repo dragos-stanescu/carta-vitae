@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { PDFViewer } from "@react-pdf/renderer";
+import { useState, lazy, Suspense } from "react";
 import { CvPreview } from "./components/cv-preview/CvPreview";
-import { CvDocument } from "./components/cv-pdf/CvDocument";
+
+const PdfView = lazy(() => import("./components/cv-pdf/PdfView"));
 
 type View = "preview" | "pdf";
 
@@ -38,9 +38,9 @@ function App() {
           <CvPreview />
         </div>
       ) : (
-        <PDFViewer className="w-full h-[calc(100vh-64px)]">
-          <CvDocument />
-        </PDFViewer>
+        <Suspense fallback={<div className="flex items-center justify-center h-[calc(100vh-64px)] text-gray-500">Loading PDF...</div>}>
+          <PdfView />
+        </Suspense>
       )}
     </div>
   );

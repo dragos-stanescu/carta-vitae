@@ -2,28 +2,29 @@ import { View, StyleSheet } from "@react-pdf/renderer";
 import { PdfText } from "./PdfText";
 
 interface SkillItemProps {
-  name: string;
-  years: number;
+  category: string;
+  skills: string[];
 }
 
-export function SkillItem({ name, years }: SkillItemProps) {
+export function SkillItem({ category, skills }: SkillItemProps) {
   return (
     <View style={styles.container}>
-      <PdfText contrast>{name}</PdfText>
-      <View style={styles.years}>
-        <PdfText contrast>{`${years} ${years > 1 ? "years" : "year"}`}</PdfText>
-      </View>
+      <PdfText contrast bold style={styles.category}>{category}</PdfText>
+      <PdfText contrast style={styles.skills}>{skills.join(", ")}</PdfText>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginBottom: 5,
+    marginBottom: 6,
   },
-  years: {
-    width: 40,
+  category: {
+    fontSize: 9,
+    marginBottom: 1,
+  },
+  skills: {
+    fontSize: 9,
+    opacity: 0.8,
   },
 });

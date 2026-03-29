@@ -4,7 +4,7 @@ export const cvData: CvData = {
   name: "Dragos Stanescu",
   titles: ["Senior React Developer", "Contractor", "Freelancer"],
   aboutMe:
-    "I am a Senior React Developer and Freelance Contractor with 8 years of experience, specializing in modern frontend technologies. I focus on delivering high-quality software solutions by rapidly identifying and implementing client needs. Only interested in remote contract work.",
+    "Senior React Developer and Freelance Contractor with 8+ years of experience turning complex business problems into clean, performant frontend products. From payment platforms and debt origination tools to climate finance dashboards, financial advisor apps, and mobile development, I've delivered measurable impact across fintech, logistics, and SaaS. I leverage AI-assisted development to ship faster and write better code. Remote contracts only.",
   contact: {
     phone: "(+40) 724 320 471",
     email: "dragos.stanescu.dev@gmail.com",
@@ -15,22 +15,34 @@ export const cvData: CvData = {
     },
   },
   skills: [
-    { name: "JavaScript", years: 8 },
-    { name: "HTML, CSS", years: 8 },
-    { name: "ReactJs", years: 6 },
-    { name: "Redux", years: 5 },
-    { name: "TypeScript", years: 5 },
-    { name: "Material UI", years: 5 },
-    { name: "React Query", years: 3 },
-    { name: "React Native", years: 2 },
-    { name: "Zustand", years: 2 },
-    { name: "Angular", years: 2 },
-    { name: "NodeJS", years: 2 },
-    { name: "GraphQL", years: 2 },
-    { name: "Contentful", years: 2 },
-    { name: "Webpack", years: 1 },
-    { name: "Java", years: 1 },
-    { name: "MySQL", years: 1 },
+    {
+      category: "Frontend",
+      skills: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Material UI",
+        "TanStack Router",
+        "React Hook Form",
+        "Angular",
+      ],
+    },
+    {
+      category: "State & Data",
+      skills: ["Redux", "Zustand", "React Query", "GraphQL", "REST APIs"],
+    },
+    {
+      category: "Mobile",
+      skills: ["React Native"],
+    },
+    {
+      category: "Backend & Tools",
+      skills: ["Webpack", "Contentful", "NodeJS"],
+    },
+    {
+      category: "AI Tooling",
+      skills: ["Cursor", "Claude Code", "GitHub Copilot"],
+    },
   ],
   education: {
     institution: "Romanian-American University",
@@ -147,8 +159,7 @@ export const cvData: CvData = {
       achievements: [
         {
           bold: "Restructured and streamlined the campaign creation process,",
-          detail:
-            "resulting in a more concise and intuitive user experience.",
+          detail: "resulting in a more concise and intuitive user experience.",
         },
         {
           bold: "Expanded aid options to include cash, credit, and bundles,",

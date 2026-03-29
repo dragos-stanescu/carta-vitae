@@ -21,7 +21,6 @@ export const cvData: CvData = {
         "JavaScript",
         "TypeScript",
         "React",
-        "Material UI",
         "TanStack Router",
         "React Hook Form",
         "Angular",
@@ -30,6 +29,22 @@ export const cvData: CvData = {
     {
       category: "State & Data",
       skills: ["Redux", "Zustand", "React Query", "GraphQL", "REST APIs"],
+    },
+    {
+      category: "UI & Design Systems",
+      skills: [
+        "Material UI",
+        "shadcn/ui",
+        "SCSS",
+        "Figma",
+        "Atomic Design",
+        "Responsive Design",
+        "Accessibility (a11y)",
+      ],
+    },
+    {
+      category: "Testing & Quality",
+      skills: ["Jest", "React Testing Library", "Cypress"],
     },
     {
       category: "Mobile",

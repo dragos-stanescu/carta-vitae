@@ -13,6 +13,11 @@ export function PreviewSidebar({
 }: PreviewSidebarProps) {
   return (
     <aside className="w-[35%] bg-[#202A44] text-white p-6 flex flex-col gap-6">
+      <img
+        src="/images/profile-1.jpg"
+        alt="Profile"
+        className="w-full rounded-full"
+      />
       <SidebarSection title="Contact">
         <ContactLine label={contact.phone} href={`tel:${contact.phone.replace(/[^+\d]/g, "")}`} />
         <ContactLine label={contact.email} href={`mailto:${contact.email}`} />

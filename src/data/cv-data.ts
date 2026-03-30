@@ -37,6 +37,7 @@ export const cvData: CvData = {
         "shadcn/ui",
         "SCSS",
         "Figma",
+        "Storybook",
         "Atomic Design",
         "Responsive Design",
         "Accessibility (a11y)",
@@ -48,11 +49,11 @@ export const cvData: CvData = {
     },
     {
       category: "Mobile",
-      skills: ["React Native"],
+      skills: ["React Native (Cross-platform development)"],
     },
     {
       category: "Backend & Tools",
-      skills: ["Webpack", "Contentful", "NodeJS"],
+      skills: ["Vite", "Webpack", "Contentful", "NodeJS", "Git"],
     },
     {
       category: "AI Tooling",

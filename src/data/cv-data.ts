@@ -22,13 +22,12 @@ export const cvData: CvData = {
         "TypeScript",
         "React",
         "TanStack Router",
-        "React Hook Form",
         "Angular",
       ],
     },
     {
-      category: "State & Data",
-      skills: ["Redux", "Zustand", "React Query", "GraphQL", "REST APIs"],
+      category: "State, Data & Validation",
+      skills: ["Redux", "Zustand", "React Query", "GraphQL", "REST APIs", "React Hook Form", "Formik", "Zod", "Valibot"],
     },
     {
       category: "UI & Design Systems",

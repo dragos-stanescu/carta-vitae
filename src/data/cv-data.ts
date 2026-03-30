@@ -27,7 +27,17 @@ export const cvData: CvData = {
     },
     {
       category: "State, Data & Validation",
-      skills: ["Redux", "Zustand", "React Query", "GraphQL", "REST APIs", "React Hook Form", "Formik", "Zod", "Valibot"],
+      skills: [
+        "Redux",
+        "Zustand",
+        "React Query",
+        "GraphQL",
+        "REST APIs",
+        "React Hook Form",
+        "Formik",
+        "Zod",
+        "Valibot",
+      ],
     },
     {
       category: "UI & Design Systems",
@@ -52,7 +62,7 @@ export const cvData: CvData = {
     },
     {
       category: "Backend & Tools",
-      skills: ["Vite", "Webpack", "Contentful", "NodeJS", "Git"],
+      skills: ["Vite", "Webpack", "Contentful", "Node.js", "Git"],
     },
     {
       category: "AI Tooling",
